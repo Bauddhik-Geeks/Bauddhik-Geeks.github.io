@@ -1,1 +1,1 @@
-# Baudhhik-Geeks.github.io
+# Bauddhik-Geeks.github.io
