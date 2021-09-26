@@ -22,7 +22,7 @@
 
 ## 👨‍💻 How to contribute 👨‍💻
 
-- Fork this repo and clone into your local system ✔️ 
+- Fork this repo and clone into your local system and then open ```index.html``` file✔️ 
 
 - Add yourself as a contributors of ```Bauddhik Geeks``` on the website in contributors section ✔️ 
  
