@@ -24,6 +24,11 @@ chart.data = [
     color: am4core.color("#fcff00"),
   },
   {
+    label: "Collabrations",
+    value: 1,
+    color: am4core.color("##36a2eb"),
+  },
+  {
     label: "Projects",
     value: 1,
     color: am4core.color("#00ffd8"),
@@ -34,7 +39,7 @@ chart.data = [
     color: am4core.color("#ff002a"),
   },
   {
-    label: "community",
+    label: "Community",
     value: 22,
     color: am4core.color("#ff8a00"),
   },
