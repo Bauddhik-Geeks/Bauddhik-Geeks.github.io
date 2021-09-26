@@ -7354,6 +7354,24 @@ h4.widget-title {
   background-repeat: no-repeat;
   transition: 0.4s;
 }
-.contributor-github-logo:hover{
-    
+.hello-anim{
+  animation: waveanim 2s linear infinite;
+}
+@keyframes waveanim {
+
+  0%{
+    transform: rotateZ(0deg);
+  }
+  25%{
+    transform: rotateZ(20deg);
+  }
+  50%{
+    transform: rotateZ(0deg);
+  }
+  75%{
+    transform: rotateZ(-15deg);
+  }
+  100%{
+    transform: rotateZ(0deg);
+  }
 }
