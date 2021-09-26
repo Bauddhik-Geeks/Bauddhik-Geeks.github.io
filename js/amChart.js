@@ -26,7 +26,7 @@ chart.data = [
   {
     label: "Collabrations",
     value: 1,
-    color: am4core.color("##36a2eb"),
+    color: am4core.color("#36a2eb"),
   },
   {
     label: "Projects",
