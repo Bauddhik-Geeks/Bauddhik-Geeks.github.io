@@ -22,6 +22,8 @@
 
 ## 👨‍💻 How to contribute 👨‍💻
 
+- Fork this repo and clone into your local system ✔️ 
+
 - Add yourself as a contributors of ```Baudheek Geeks``` on the website in contributors section ✔️ 
  
 - Find the below code on website ✔️
@@ -31,11 +33,11 @@
 - Copy and Paste these 4 lines again below the previous contributor one code below the div tag on ```5728``` line ✔️
 ```
 <div class="contributor-profile">
-  <a href="https://github.com/kevalvavaliya"><div class="contributor-github-logo"></div></a>
+  <a href="https://github.com/{username}"><div class="contributor-github-logo"></div></a>
   <img class="contrib-profile-image" src="https://github.com/{username}.png" >
 </div>
 ```
-- Change 👉 ```href``` with your github handle ✔️
+- Replace 👉 ```{username}``` with your gihtub username in 👉 ```href``` ✔️
 
 - Replace 👉 ```{username}``` with your gihtub username in 👉 ```src``` ✔️
 
@@ -53,6 +55,3 @@
   <img alt="Sloan, the sloth mascot" width="250px" src="https://thumbs.gfycat.com/EqualAfraidAntelope-max-1mb.gif">
    <br>
 </p>
-
-
-
