@@ -24,7 +24,7 @@
 
 - Fork this repo and clone into your local system ✔️ 
 
-- Add yourself as a contributors of ```Baudheek Geeks``` on the website in contributors section ✔️ 
+- Add yourself as a contributors of ```Bauddhik Geeks``` on the website in contributors section ✔️ 
  
 - Find the below code on website ✔️
 
