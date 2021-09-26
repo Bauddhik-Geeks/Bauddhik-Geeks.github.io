@@ -1420,7 +1420,14 @@
   .circle-ripple-2{
     display: none;
   }
-  
+  .prj-item{
+    margin:0px 0px;
+    margin-bottom: 24px;
+    max-height: max-content !important;
+  }
+.prj-desc{
+  padding: 10px;
+}
 
 }
 @media only screen and (max-width: 375px) {
