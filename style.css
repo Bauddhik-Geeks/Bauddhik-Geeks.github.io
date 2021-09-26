@@ -7391,3 +7391,14 @@ h4.widget-title {
     transform: rotateZ(0deg);
   }
 }
+.prj-author{
+  font-style: italic;
+  font-size: 12px;
+}
+.prj-author > a{
+  text-decoration: underline;
+  display: initial !important;
+}
+.prj-author >a:hover{
+  color: white;
+}
