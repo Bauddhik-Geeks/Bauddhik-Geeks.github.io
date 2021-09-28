@@ -22,25 +22,65 @@
 
 ## 👨‍💻 How to contribute 👨‍💻
 
-- Fork this repo and clone into your local system and then open ```index.html``` file✔️ 
+We would love to accept your contributions! To get started follow below guidelines: 👇
 
-- Add yourself as a contributors of ```Bauddhik Geeks``` on the website in contributors section ✔️ 
+**1.** Fork [this](https://github.com/Bauddhik-Geeks/Welcome-to-Bauddhik-Geeks) repository ✔️
+
+**2.** Clone your forked copy of this Repository ✔️
+```
+git clone git@github.com:{username}/Bauddhik-Geeks.github.io.git
+```
+
+**3.** Navigate to thid project directory :file_folder: ✔️
+
+```
+cd Bauddhik-Geeks/Welcome-to-Bauddhik-Geeks
+```
+
+**4.** Add a reference(remote) to the original repository ✔️
+```
+git remote add upstream https://github.com/Bauddhik-Geeks/Welcome-to-Bauddhik-Geeks.git
+```
+
+**5.** Check the remotes for this repository ✔️
+
+```
+git remote -v
+```
+
+**6.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository)  ✔️
+
+```
+git pull upstream master
+```
+
+**7.** Create a new branch ✔️
+
+```
+git checkout -b <your_branch_name>
+```
+
+**8.** Then open ```index.html``` file in your System ✔️ 
+
+**9.** Add yourself as a contributors of ```Bauddhik Geeks``` on the website in contributors section ✔️ 
  
-- Find the below code on website ✔️
+**10.** Find the below code on website ✔️
 
 ![Screenshot (502)](https://user-images.githubusercontent.com/68494604/134794847-9894f06f-cfac-4533-8a2b-6d23d6f345d0.png)
 
-- Copy and Paste these 4 lines again below the previous contributor one code below the div tag on ```5728``` line ✔️
+**11.** Copy and Paste these 4 lines again below the previous contributor one code below the div tag on ```5728``` line ✔️
+
 ```
 <div class="contributor-profile">
   <a href="https://github.com/{username}"><div class="contributor-github-logo"></div></a>
   <img class="contrib-profile-image" src="https://github.com/{username}.png" >
 </div>
 ```
-- Replace 👉 ```{username}``` with your gihtub username in 👉 ```href``` ✔️
 
-- Replace 👉 ```{username}``` with your gihtub username in 👉 ```src``` ✔️
+**12.** Replace 👉 ```{username}``` with your gihtub username in 👉 ```href``` ✔️
 
+**13.** Replace 👉 ```{username}``` with your gihtub username in 👉 ```src``` ✔️   
+  
 - Like this 👇 👇 👇
 
  ![Screenshot (503)](https://user-images.githubusercontent.com/68494604/134796717-f3ad78bc-b1ce-4249-9680-6f20427960f5.png)
