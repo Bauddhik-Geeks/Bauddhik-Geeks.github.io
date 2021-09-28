@@ -5764,6 +5764,22 @@
                         width: 100%;
                         border-radius: 4px;
                     }
+                    
+                    .news_email_submit {
+                        outline: none;
+                        border: 0;
+                        border-radius: 3px;
+                        overflow: hidden;
+                        top: 15px;
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: 0.3s ease-in-out;
+                    }
+                    
+                    .news_email_submit:hover {
+                        background: #fbbd18;
+                        color: #444;
+                    }
                 </style>
                 <div class="contributors">
                     <div class="contri_box">
@@ -5984,8 +6000,8 @@
                     <p>Keep in touch with us!</p>
                     <div class="newsletter">
                         <form action="https://send.pageclip.co/1eyPioCMrJA2n6FCmHIgVlAatXO8cRYo" method="post">
-                            <div class="input"><input type="email" name="email" placeholder="Your email address" /></div>
-                            <button type="submit" class="pageclip-form__submit submit"><span>Join Us</span></button>
+                            <div class="input"><input type="email" name="email" placeholder="Your email address" required/></div>
+                            <button type="submit" class="pageclip-form__submit submit news_email_submit"><span>Join Us</span></button>
                             <!--<div class="submit"><input class="btn" type="submit" name="subscribe" value="Join us" /></div> -->
                         </form>
                     </div>
