@@ -1,0 +1,27 @@
+@mixin transition($speed) {
+    transition: all $speed linear 0s;
+}
+
+#mainNav {
+    background-color: $color-main-dark !important;
+    border-bottom: 1px solid $color-main-light;
+    font-size: 1rem;
+
+    #logo {
+        max-height: 50px;
+        margin-right: 15px;
+        @include transition(0.2s);
+    }
+
+    &.navbar_small {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        @include transition(0.2s);
+
+        #logo {
+            max-height: 25px;
+            margin-top: -5px;
+            @include transition(0.2s);
+        }
+    }
+}

@@ -1,0 +1,114 @@
+#organizers.organizers1 {
+
+    padding-bottom: 30px;
+
+    h3 {
+        text-align: center;
+    }
+
+    .organizer {
+        margin-bottom: 30px;
+        
+
+        .organizer-picture {
+            img {
+                width: 100%;
+            }
+        }
+
+        .organizer-info {
+            color: grey;
+            text-align: center;
+            margin-top: 15px;
+            border-radius: 5px; 
+
+            a {
+                color: grey;
+                text-decoration: none;
+            }
+
+            h5 {
+                margin-bottom: 0;
+            }
+            
+            span {
+                font-size: 0.8rem;
+                line-height: 0.8rem;
+            }
+        }
+    }
+
+    &.black_and_white {
+        .organizer {
+            .organizer-picture {
+                img {
+                    filter: gray;
+                    -webkit-filter: grayscale(1);
+                    -webkit-transition: all .5s ease-in-out;
+                    &:hover {
+                        filter: none;
+                        -webkit-filter: grayscale(0);
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+#organizers.organizers2 {
+
+    padding-bottom: 30px;
+    
+    h3 {
+        text-align: center;
+    }
+
+    .organizer {
+        margin-bottom: 30px;
+        background: rgba(153, 153, 153, 0.6);
+        padding: 20px 20px;
+        border-radius: 5px;
+
+        .organizer-picture {
+            img {
+                width: 100%;
+                filter: gray;
+                -webkit-filter: grayscale(1);
+                -webkit-transition: all .5s ease-in-out;
+                &:hover {
+                    filter: none;
+                    -webkit-filter: grayscale(0);
+                }
+            }
+        }
+
+        .organizer-info {
+            color: #ffffff;
+            text-align: center;
+            background: #111111;
+            padding: 15px 10px;
+            margin-top: 30px;
+            border-radius: 5px; 
+
+            h5 {
+                a {
+                    color: white;
+                    margin-bottom: 5px;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    #organizers {
+        .organizers_pictures {
+            padding: 0 100px;
+        }
+    }
+}

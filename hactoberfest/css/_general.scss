@@ -1,0 +1,154 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto', sans-serif;
+  color: $h_color;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+a {
+  color: $color-main;
+}
+
+.lead {
+  font-weight: 400;
+}
+
+body {
+  font-size: $body_font_size;
+}
+
+.highlighted {
+  color: $color-main;
+}
+.bg-highlight {
+  background-color: $color-main;
+  color: white;
+  h1,
+  h2,
+  h3 {
+    color: white;
+  }
+}
+
+/* section {
+    padding: $sections_padding_small 0;
+} */
+
+@media (min-width: 768px) {
+  section {
+    padding: $sections_padding 0;
+  }
+}
+
+h2,
+h3 {
+  margin-bottom: 30px;
+}
+
+.custom-list-icon {
+  list-style-type: none;
+  padding: 0;
+  li {
+    position: relative;
+    padding-left: 20px;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      color: #4e4e4e;
+      font-family: 'Ionicons';
+    }
+  }
+}
+.list-arrow-right {
+  @extend .custom-list-icon;
+  li {
+    &::before {
+      content: '\f3d3';
+    }
+  }
+}
+
+ul.color_list {
+  padding-left: 0;
+
+  li {
+    padding: 6px 20px 6px 45px;
+    background: rgba(0, 0, 0, 0.05);
+    color: black;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    margin-bottom: 5px;
+    list-style-type: none;
+  }
+
+  li:after {
+    content: '\f125';
+    font-family: 'Ionicons';
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: $color-main;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+}
+
+.hacktober-bg {
+  color: white;
+  background-color: $color-main;
+  padding: 20vh;
+
+  a {
+    color: $h_color;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/bacflourish-bottom.svg'),
+      url('../images/flourish-top.svg'),
+  }
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom right, top left;
+
+  h1,
+  h2,
+  h3 {
+    text-transform: none;
+    color: white;
+  }
+}
+
+@media (max-width: 767px) {
+  section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .hacktober-bg {
+    padding: 20px 15px;
+    img {
+      margin-bottom: 15px;
+    }
+  }
+
+  #sponsors {
+    text-align: center;
+    img {
+      max-height: 90px;
+      margin: 15px 0;
+    }
+  }
+}

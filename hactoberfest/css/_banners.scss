@@ -1,0 +1,99 @@
+.banner {
+    h1 {
+        color: white;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        color: $color-main;
+        margin-bottom: 15px;
+    }
+
+    h4 {
+        color: white;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner {
+        h1 {
+            font-size: 50px;
+            line-height: 60px;
+        }
+    }
+}
+
+.banner1 {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    padding: 100px 20px 20px 20px;
+    background: $bg_banner1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #f3f3f3;
+
+    .inner_banner {
+        padding: 30px 20px; 
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 30px;
+        text-align: center;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        text-transform: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner1 {
+        padding: 150px 100px 100px 100px;
+        
+        .inner_banner {
+            padding: 50px 20px; 
+        }
+    }
+}
+
+.banner2 {
+    background-color: $banner2_color;
+    padding: 50px 0;
+
+    h3 {
+        color: white;   
+    }
+}
+
+.banner3 {
+    color: white;
+    background-color: $color-main;
+    min-height: 100vh;
+    padding: 10vh;
+
+    a {
+        color: $h_color;
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: url('../images/flourish-bottom.svg'), url('../images/flourish-top.svg'), radial-gradient(circle, $color-main 0, $color-main-dark 200%);
+    }
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom right, top left;
+
+    img, h1 {
+        margin-bottom: 50px;
+    }
+
+    h1, h2, h3 {
+        text-transform: none;
+        color: white;
+    }
+}
