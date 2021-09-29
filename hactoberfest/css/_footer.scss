@@ -1,0 +1,16 @@
+footer {
+    background-color: $navbar_color;
+    font-size: 0.9rem;
+    img {
+        max-width: 85px;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        font-size: 1rem;
+        img {
+            max-width: 200px;
+        }
+    }
+}

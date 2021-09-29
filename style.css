@@ -7402,3 +7402,29 @@ h4.widget-title {
 .prj-author >a:hover{
   color: white;
 }
+.hactoberfest2021{
+  height: max-content;
+  width: max-content;
+  margin-top: 120px;
+}
+.hactoberfest2021>button{
+  width: 220px;
+  height: 50px;  
+  background-color: #91a88c; 
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+  border-radius: 6px;
+}
+.hactober-txt{
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: -4px;
+}
+.hactoberfest2021>button:hover{
+  background-color: #2b3531;
+  color: #f54803;
+  cursor: pointer;
+}

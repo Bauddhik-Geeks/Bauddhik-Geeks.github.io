@@ -1,0 +1,31 @@
+#faq {
+    .card {
+        margin-bottom: 10px;
+
+        .card-header {
+            background-color: #000;
+            a {
+                color: #582d41;
+                padding-left: 20px;
+                position: relative;
+                display: block;
+                text-decoration: none;
+
+                &.collapsed::before {
+                    font-family: "Ionicons";
+                    content: "\f218";
+                    transition: 0.5s linear ease-out;
+                    position: absolute;
+                    left: 0px;
+                }
+                &::before {
+                    position: absolute;
+                    left: 0px;
+                    font-family: "Ionicons";
+                    content: "\f209";
+                }
+            }
+
+        }
+    }
+}
