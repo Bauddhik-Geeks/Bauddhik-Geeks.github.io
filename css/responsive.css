@@ -1268,11 +1268,6 @@
 
 
 
-
-
-
-
-
 @media only screen and (max-width: 479px) {
   .blog-list-img {
     margin-right: 10px;
@@ -1428,6 +1423,11 @@
 .prj-desc{
   padding: 10px;
 }
+  .hactoberfest2021{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
 }
 @media only screen and (max-width: 375px) {
