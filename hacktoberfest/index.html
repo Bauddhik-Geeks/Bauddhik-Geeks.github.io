@@ -96,7 +96,7 @@
         <input type="text" name="githubusername" placeholder="Enter your Github username" required><br>
         <input type="text" name="discordname" placeholder="Enter your discord username" required><br>
         <!-- This button will have a loading spinner. Keep the inner span for best results. -->
-        <button type="submit" class="pageclip-form__submit main-frm-submit">
+        <button type="submit" onclick="(e)=>pgclip(e)" class="pageclip-form__submit main-frm-submit">
           <span>Join</span>
         </button>
       </form>
@@ -629,6 +629,13 @@
     modalTriggerElementId: 'eventbrite-widget-modal-trigger-123187963515',
     onOrderComplete: exampleCallback
   });
+
+
+  function pgclip(e){
+      e.preventDefault()
+      fetch(url)
+
+  }
 </script>
 <script>
    $(document).ready(function(){
