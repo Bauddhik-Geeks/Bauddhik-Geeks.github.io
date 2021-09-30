@@ -24,7 +24,7 @@
 
 We would love to accept your contributions! To get started follow below guidelines: 👇
 
-**1.** Fork [this](https://github.com/Bauddhik-Geeks/Welcome-to-Bauddhik-Geeks) repository ✔️
+**1.** Fork and give star ⭐ to [this](https://github.com/Bauddhik-Geeks/Welcome-to-Bauddhik-Geeks) repository ✔️
 
 **2.** Clone your forked copy of this Repository ✔️
 ```
