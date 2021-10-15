@@ -9,7 +9,7 @@ chart.responsive.enabled = true;
 
 chart.data = [
   {
-    label: "Acivities",
+    label: "Activities",
     value: 15,
     color: am4core.color("#00ff78"),
   },
@@ -19,12 +19,12 @@ chart.data = [
     color: am4core.color("#ff00ae"),
   },
   {
-    label: "sessions",
+    label: "Sessions",
     value: 2,
     color: am4core.color("#fcff00"),
   },
   {
-    label: "Collabrations",
+    label: "Collaborations",
     value: 1,
     color: am4core.color("#36a2eb"),
   },
