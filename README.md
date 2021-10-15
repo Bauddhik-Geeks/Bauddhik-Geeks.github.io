@@ -31,15 +31,15 @@ We would love to accept your contributions! To get started follow below guidelin
 git clone git@github.com:{username}/Bauddhik-Geeks.github.io.git
 ```
 
-**3.** Navigate to thid project directory :file_folder: ✔️
+**3.** Navigate to the project directory :file_folder: ✔️
 
 ```
-cd Bauddhik-Geeks/Welcome-to-Bauddhik-Geeks
+cd Bauddhik-Geeks.github.io
 ```
 
 **4.** Add a reference(remote) to the original repository ✔️
 ```
-git remote add upstream https://github.com/Bauddhik-Geeks/Welcome-to-Bauddhik-Geeks.git
+git remote add upstream https://github.com/Bauddhik-Geeks/Bauddhik-Geeks.github.io.git
 ```
 
 **5.** Check the remotes for this repository ✔️
@@ -51,7 +51,7 @@ git remote -v
 **6.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository)  ✔️
 
 ```
-git pull upstream master
+git pull upstream main
 ```
 
 **7.** Create a new branch ✔️
@@ -77,9 +77,9 @@ git checkout -b <your_branch_name>
 </div>
 ```
 
-**12.** Replace 👉 ```{username}``` with your gihtub username in 👉 ```href``` ✔️
+**12.** Replace 👉 ```{username}``` with your github username in 👉 ```href``` ✔️
 
-**13.** Replace 👉 ```{username}``` with your gihtub username in 👉 ```src``` ✔️   
+**13.** Replace 👉 ```{username}``` with your github username in 👉 ```src``` ✔️   
   
 - Like this 👇 👇 👇
 
