@@ -1,3 +1,4 @@
+
 /*=========================================================
 Author       : Bauddhik geek.
 Template Name: Bauddhik geek Landing Page
@@ -7427,4 +7428,81 @@ h4.widget-title {
   background-color: #2b3531;
   color: #f54803;
   cursor: pointer;
+}
+
+
+.workshop_div{
+  top: 6%;
+text-align: center;
+}
+
+.workshopbg 
+{
+  display: flex;
+align-items: center;
+justify-content: center;
+ 
+} 
+/* Float four workcolumss side by side */
+.workcolums {
+  float: left;
+  /* width: 25%; */
+  padding: 0 10px;
+  display: flex;
+  width: auto;
+  margin: 0% 0% 1% 1%;
+  padding: 0;
+  
+}
+
+/* Remove extra left and right margins, due to padding */
+.workrow {
+
+  margin: 0 -5px;
+display: flex;
+  
+}
+
+/* Clear floats after the workcolumss */
+.workrow::after {
+  content: "";
+display: table;
+clear: both;
+display: flex;
+flex: auto;
+flex-wrap: wrap;
+justify-content: center;
+align-content: center;
+align-items: center;
+}
+
+/* Responsive workcolumss */
+@media screen and (max-width: 600px) {
+  .workcolums {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.sess_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 0px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.sesscardsimg{
+    display: flex;
+    width: auto;
+}
+.sess_img{
+  width: auto;
+  width: 400px;
+  padding-top: 21px;
+  margin: 0%;
+  display: flex;
+  margin: 0px;
+  padding: 0% 0% 0% 0%;
 }
