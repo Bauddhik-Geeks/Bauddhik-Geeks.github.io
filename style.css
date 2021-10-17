@@ -7434,6 +7434,13 @@ h4.widget-title {
 .workshop_div{
   top: 6%;
 text-align: center;
+display: flex;
+background: #000;
+width: 100%;
+height: 100vh;
+clear: both;
+
+justify-content: center;
 }
 
 .workshopbg 
@@ -7457,8 +7464,6 @@ justify-content: center;
 
 /* Remove extra left and right margins, due to padding */
 .workrow {
-
-  margin: 0 -5px;
 display: flex;
   
 }
@@ -7499,10 +7504,15 @@ align-items: center;
 }
 .sess_img{
   width: auto;
-  width: 400px;
+  width: 350px;
   padding-top: 21px;
   margin: 0%;
   display: flex;
   margin: 0px;
   padding: 0% 0% 0% 0%;
+  height: 250px;
+}
+
+.worktitle{
+  
 }
