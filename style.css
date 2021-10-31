@@ -7458,7 +7458,7 @@ justify-content: center;
   box-shadow: 0px 0px 5px 1px rgb(42,98,46);
   padding: 0 10px;
   display: flex;
-  width: 350px;
+  width: auto;
   margin: 1% 1% 1% 1%;
   padding: 0;
   border-radius: 13px;
@@ -7468,13 +7468,14 @@ justify-content: center;
 .workcolums:hover{
 
   box-shadow: 0px 0px 5px 1px #fbbd18;
-}
 
+}
 
 
 .workrow {
 display: flex;
-  
+flex-wrap: wrap;
+  flex-direction: row;
 }
 
 
@@ -7493,18 +7494,22 @@ align-items: center;
 @media screen and (max-width: 600px) {
   .workcolums {
     width: 100%;
-    display: block;
+    display: flex;
     margin-bottom: 20px;
+   flex-flow: row wrap;
+   padding:  0% 8%;
+   align-content: center;
+   justify-content: center;
   }
 }
 
 /* Style the counter cards */
 .sess_card {
-  box-shadow: 0 4px 8px 0 rgba(226, 39, 39, 0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(226, 39, 39, 0.2); */
   padding: 0px;
   text-align: center;
   background-color: #f1f1f1;
-  width: auto !important;
+  width: 350px !important;
   background-color: transparent;
 }
 
@@ -7522,6 +7527,7 @@ align-items: center;
   padding: 0% 0% 0% 0%;
   height: 200px;
   max-width: 100%;
+  width: -webkit-fill-available;
   border-radius: 0% 0% 13px 13px;
 }
 
