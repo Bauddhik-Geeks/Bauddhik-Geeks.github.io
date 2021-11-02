@@ -7439,7 +7439,7 @@ text-align: center;
 display: flex;
 background: #000;
 width: 100%;
-height: 200vh;
+height: auto;
 clear: both;
 
 justify-content: center;
@@ -7456,16 +7456,16 @@ justify-content: center;
   padding: 0 10px;
   display: flex;
   width: auto;
-  margin: 13px 13px;
+  margin: 20px;
   padding: 0;
   border-radius: 13px;
-  transition: transform 1s;
+  transition: transform .5s;
 
 }
 
 .workcolums:hover{
 
-  box-shadow: 0px 0px 5px 1px #fbbd18;
+  box-shadow: 0px 0px 4px 2px #fbbd18;
   transform: scale(1.06);
 }
 
@@ -7574,7 +7574,7 @@ align-items: center;
    
   }
   .workshop_div{
-    height: 246vh;
+    /* height: 246vh; */
   }
 }
 
