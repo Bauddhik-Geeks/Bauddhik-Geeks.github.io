@@ -7445,12 +7445,9 @@ clear: both;
 justify-content: center;
 }
 
-.workshopbg 
-{
-  display: flex;
-align-items: center;
-justify-content: center;
- 
+.worksection {
+  width: 100%;
+  padding: 0% 0px;
 } 
 
 .workcolums {
@@ -7459,7 +7456,7 @@ justify-content: center;
   padding: 0 10px;
   display: flex;
   width: auto;
-  margin: 1% 1% 1% 1%;
+  margin: 13px 13px;
   padding: 0;
   border-radius: 13px;
 
@@ -7476,10 +7473,11 @@ justify-content: center;
 display: flex;
 flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
 }
 
 
-.workrow::after {
+/* .workrow::after {
   content: "";
 display: table;
 clear: both;
@@ -7488,20 +7486,9 @@ flex: auto;
 justify-content: space-around;
 align-content: center;
 align-items: center;
-}
+} */
 
-/* Responsive workcolumss */
-@media screen and (max-width: 600px) {
-  .workcolums {
-    width: 100%;
-    display: flex;
-    margin-bottom: 20px;
-   flex-flow: row wrap;
-   padding:  0% 8%;
-   align-content: center;
-   justify-content: center;
-  }
-}
+
 
 /* Style the counter cards */
 .sess_card {
@@ -7541,3 +7528,52 @@ align-items: center;
   font-size: 20px;
   padding: 1% 0% 3% 0%;
 }
+
+
+/* Responsive workcolumss */
+@media screen and (max-width: 867px) {
+  .workcolums {
+   
+    display: flex;
+    
+   flex-flow: row wrap;
+   
+   align-content: center;
+   justify-content: center;
+  }
+  
+  .worksection{
+    padding: 0% 0%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .workcolums {
+    
+    display: flex;
+    
+   flex-flow: row wrap;
+   align-content: center;
+   justify-content: center;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .workcolums {
+   
+    display: flex;
+    
+   flex-flow: row wrap;
+  
+   align-content: center;
+   justify-content: center;
+   margin-bottom: 11px;
+   
+  }
+  .workshop_div{
+    height: 246vh;
+  }
+}
+
