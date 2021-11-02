@@ -7459,13 +7459,14 @@ justify-content: center;
   margin: 13px 13px;
   padding: 0;
   border-radius: 13px;
+  transition: transform 1s;
 
 }
 
 .workcolums:hover{
 
   box-shadow: 0px 0px 5px 1px #fbbd18;
-
+  transform: scale(1.06);
 }
 
 
