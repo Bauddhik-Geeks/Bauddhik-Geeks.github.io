@@ -81,6 +81,7 @@ justify-content: center;
   padding: 0;
   border-radius: 13px;
   transition: transform .5s;
+  overflow: hidden;
 
 }
 
@@ -139,7 +140,6 @@ align-items: center;
   width: -webkit-fill-available;
   border-radius: 0% 0% 13px 13px;
 }
-
 .worktitle{
   padding-bottom: 90px;
 }

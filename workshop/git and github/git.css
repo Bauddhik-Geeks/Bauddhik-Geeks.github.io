@@ -15,6 +15,10 @@
 .back_arrow img{
     width: 33%;
     
+
+}
+.arrow_hover:hover{
+    fill: #fbbd18;
 }
 
 .workbar{
