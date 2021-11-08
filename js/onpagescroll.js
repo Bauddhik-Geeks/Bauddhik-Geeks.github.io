@@ -53,8 +53,8 @@ $(window).scroll(function(){
    // }
 
   $(window).scroll(function(){
-    // console.log($(window).scrollTop());
-    // console.log(topMenuHeight);
+    console.log($(window).scrollTop());
+    console.log(topMenuHeight);
    if($(window).scrollTop() > topMenuHeight){
      $("header").addClass('fixed');
     }else{
