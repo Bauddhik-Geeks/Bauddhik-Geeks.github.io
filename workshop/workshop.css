@@ -1,8 +1,11 @@
 *{
     margin: 0;
-    padding: o;
-    background-color: #000;
+    box-sizing: border-box;
 }
+
+
+
+
 
 h3{
   font-family: "Poppins", sans-serif;
@@ -11,15 +14,33 @@ h3{
 }
 
 
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 10;
+}
+
 .p-tb {
   padding-top: 90px;
-  padding-bottom: 90px;
+  
 }
 .sec-title {
   margin-bottom: 0;
   color: #fff;
-  display: table;
-  width: 100%;
+  display: block;
+  text-align: center;
+  width: max-content;
+  
+  position: relative;
+  z-index: 10000;
+  margin: auto;
 }
 .sec-title h1 + h3 {
   font-weight: normal;
@@ -58,7 +79,7 @@ h3{
   top: 6%;
 text-align: center;
 display: flex;
-background: #000;
+background: transparent;
 width: 100%;
 height: auto;
 clear: both;
@@ -73,7 +94,7 @@ justify-content: center;
 
 .workcolums {
   float: left;
-  box-shadow: 0px 0px 5px 1px rgb(42,98,46);
+  box-shadow: 0px 0px 5px 2px rgb(42,98,46);
   padding: 0 10px;
   display: flex;
   width: auto;
@@ -82,12 +103,15 @@ justify-content: center;
   border-radius: 13px;
   transition: transform .5s;
   overflow: hidden;
+  background-color: black;
+  position: relative;
+    z-index: 10000;
 
 }
 
 .workcolums:hover{
 
-  box-shadow: 0px 0px 4px 2px #fbbd18;
+  box-shadow: 0px 0px 4px 3px #fbbd18;
   transform: scale(1.06);
 }
 
@@ -97,6 +121,7 @@ display: flex;
 flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  margin: 5% 0% 0% 0%;
 }
 
 
@@ -140,9 +165,9 @@ align-items: center;
   width: -webkit-fill-available;
   border-radius: 0% 0% 13px 13px;
 }
-.worktitle{
+/* .worktitle{
   padding-bottom: 90px;
-}
+} */
 
 .sesscardstext{
   font-family: "Poppins", sans-serif;

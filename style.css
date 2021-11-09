@@ -7528,6 +7528,29 @@ align-items: center;
   font-size: 20px;
   padding: 1% 0% 3% 0%;
 }
+.work-btn{
+  margin-top: 4%;
+}
+.btn-wrokshop
+{
+background: transparent;
+color: white;
+font-family: "Poppins", sans-serif;
+width: max-content;
+font-size: 29px;
+border: none;
+box-shadow: 0px 0px 6px 2px rgb(42 98 46);
+border-radius: 6px;
+    margin-top: 74px;
+    font-weight: 500;
+    transition: transform .5s;
+    padding: 6px 12px;
+}
+.btn-wrokshop:hover{
+  box-shadow: 0px 0px 6px 2px #fbbd18;
+  transform: scale(1.06);
+  background-color: ;
+}
 
 
 /* Responsive workcolumss */
