@@ -7571,17 +7571,6 @@ border-radius: 6px;
 }
 
 
-@media screen and (max-width: 600px) {
-  .workcolums {
-    
-    display: flex;
-    
-   flex-flow: row wrap;
-   align-content: center;
-   justify-content: center;
-
-  }
-}
 
 @media screen and (max-width: 600px) {
   .workcolums {
@@ -7596,7 +7585,16 @@ border-radius: 6px;
    
   }
   .workshop_div{
-    height: 246vh;
+    height: 245vh;
+  }
+  .work-btn{
+    padding-top: 20%;
   }
 }
+@media screen and (max-width: 375px) {
 
+    .workshop_div{
+      height: max-content;
+    }
+    .workcolums{ width: -webkit-fill-available;}
+}
