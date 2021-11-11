@@ -8122,6 +8122,17 @@ h4.widget-title {
 
 /************ our-team and contributor-section *******/
 
+#our-team {
+    background: linear-gradient(#000, #151515) !important;
+    padding-top: 0 !important;
+}
+
+#contributor {
+    background: linear-gradient(#151515, #0e0e0e) !important;
+    /* border-bottom: 2px solid #222;
+    border-top: 2px solid #222; */
+}
+
 .contributors {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -8143,17 +8154,22 @@ h4.widget-title {
 .contri_box {
     width: auto;
     text-align: center;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 .contri-card {
-    perspective: 800px;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
 
 .contri-card-inner {
     width: 200px;
     height: 250px;
     position: relative;
-    transition: transform 0.6s;
+    transition: transform 0.7s ease-in-out;
     transform-style: preserve-3d;
 }
 
@@ -8170,8 +8186,9 @@ h4.widget-title {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     box-shadow: 0px 0px 20px -10px #333;
-    border-radius: 10px;
-    overflow: hidden;
+    border-radius: 7px;
+    background-size: cover;
+    background-image: url('https://userscontent2.emaze.com/images/f9538183-0ff9-478f-b964-c8ab90421e3b/3d28e192fda5c17250f96a2779c84475.jpg');
 }
 
 .contri-card-front img {
@@ -8186,6 +8203,14 @@ h4.widget-title {
     right: 0;
     margin: auto;
     padding: 0;
+    transform: translateZ(70px);
+    border-radius: 7px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.contri-card-front {
+    background: #fff;
 }
 
 .contri-card-back {
@@ -8193,9 +8218,17 @@ h4.widget-title {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#151515, #333);
     color: #fff;
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
+    transform: rotateX(180deg);
+    padding-inline: 2px;
+    transform-style: preserve-3d;
+}
+
+.contri-card-back>div {
+    position: relative;
+    transform: translateZ(70px);
+    color: gold;
 }
 
 .contri-card-back span {
@@ -8211,16 +8244,26 @@ h4.widget-title {
 }
 
 .contri-card:hover .contri-card-inner {
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
+    transform: rotateX(180deg);
 }
 
-.contri-card:hover .contri-card-back {
+.contri-card-back {
+    z-index: 0;
+}
+
+.contri-card-front {
+    z-index: 2;
+}
+
+
+/* .contri-card:hover .contri-card-back {
     z-index: 1;
 }
 
 .contri-card:hover .contri-card-front {
     z-index: -1;
-}
+} */
 
 
 /* Newslatter form */
