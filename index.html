@@ -3198,7 +3198,7 @@
         </div>
         <!-- Token Structure end -->
         <!-- The Roadmap  start-->
-        <div class="roadmap-sec p-tb white-sec c-l" id="roadmap" style="height:1500px">
+        <div class="roadmap-sec p-tb white-sec c-l" id="roadmap" style="min-height:1000px;overflow:hidden;">
 
             <div class="circle-ripple">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
@@ -6227,145 +6227,515 @@
         </div>
         <!-- The Partner end -->
         <!-- The Media start -->
+        <style>
+            .contributors {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                justify-items: center;
+                justify-content: center;
+                gap: 10px;
+                grid-row-gap: 2em;
+            }
+            
+            @media screen and (min-width: 1600px) {
+                .contributors {
+                    max-width: 1200px;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            
+            .contri_box {
+                width: auto;
+                text-align: center;
+            }
+            
+            .contri-card {
+                perspective: 800px;
+            }
+            
+            .contri-card-inner {
+                width: 200px;
+                height: 250px;
+                position: relative;
+                transition: transform 0.6s;
+                transform-style: preserve-3d;
+            }
+            
+            .contri-card-inner img {
+                width: 100%;
+            }
+            
+            .contri-card-front,
+            .contri-card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transition: transform 0.3s ease-in-out;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                box-shadow: 0px 0px 20px -10px #333;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            
+            .contri-card-front img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                max-width: none;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                padding: 0;
+            }
+            
+            .contri-card-back {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(#151515, #333);
+                color: #fff;
+                transform: rotateY(180deg);
+            }
+            
+            .contri-card-back span {
+                font-size: 24px;
+                font-weight: bold;
+            }
+            
+            .contri-card-back li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 2px;
+                font-size: 18px;
+            }
+            
+            .contri-card:hover .contri-card-inner {
+                transform: rotateY(180deg);
+            }
+            
+            .contri-card:hover .contri-card-back {
+                z-index: 1;
+            }
+            
+            .contri-card:hover .contri-card-front {
+                z-index: -1;
+            }
+            
+            .news_email_submit {
+                outline: none;
+                border: 0;
+                border-radius: 3px;
+                overflow: hidden;
+                top: 15px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+            }
+            
+            .news_email_submit:hover {
+                background: #fbbd18;
+                color: #444;
+            }
+        </style>
+        <div class="blog-section p-tb" style="background: #f2f2f2" id="our-team">
+            <div class="container">
+                <div class="sec-title text-center" style="color: #000000">
+                    <h3>Our Team</h3>
+                </div>
+            </div>
+
+            <div class="contributors">
+                <div class="contri_box">
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://avatars.githubusercontent.com/u/72963356?v=4" alt="Keval" />
+                            </div>
+                            <div class="contri-card-back">
+                                <span>Keval Vavaliya</span>
+                                <div>
+                                    <li><a href="https://github.com/kevalvavaliya" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://twitter.com/keval_vavaliya" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contri_box">
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://avatars.githubusercontent.com/u/53345517?v=4" alt="Nitesh" />
+                            </div>
+                            <div class="contri-card-back">
+                                <span>Nitesh Thapliyal</span>
+                                <div>
+                                    <li><a href="https://github.com/Nitesh-thapliyal" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://twitter.com/Bauddhik_Geek" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contri_box">
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://github.com/adityamangal1.png?size=460" alt="Aditya" />
+                            </div>
+                            <div class="contri-card-back">
+                                <span>Aditya Mangal</span>
+                                <div>
+                                    <li><a href="https://github.com/adityamangal1" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://twitter.com/AdityaM44382015" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contri_box">
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://github.com/Piyush-Codes7.png?size=460" alt="Piyush" />
+                            </div>
+                            <div class="contri-card-back">
+                                <span>Piyush Chandel</span>
+                                <div>
+                                    <li><a href="https://github.com/Piyush-Codes7" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://twitter.com/Piyush_Chandel7" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contri_box">
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://github.com/harikanani.png?size=460" alt="Harikrushn" />
+                            </div>
+                            <div class="contri-card-back">
+                                <span>Harikrushn Kanani</span>
+                                <div>
+                                    <li><a href="https://github.com/harikanani" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://twitter.com/Harikrushn9" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contri_box">
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://github.com/kamleshjoshi8102.png" alt="Kamlesh" />
+                            </div>
+                            <div class="contri-card-back">
+                                <span>Kamlesh Joshi</span>
+                                <div>
+                                    <li><a href="https://github.com/kamleshjoshi8102" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://twitter.com/spyd3r17" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contri_box">
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://github.com/abhigoyani.png" alt="Abhi Goyani" />
+                            </div>
+                            <div class="contri-card-back">
+                                <span>Abhi Goyani</span>
+                                <div>
+                                    <li><a href="https://github.com/abhigoyani" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://twitter.com/abhigoyani_" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contri_box">
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://github.com/rhvsingh.png" alt="Raja Harsh Vardhan Singh" />
+                            </div>
+                            <div class="contri-card-back">
+                                <span>Raja Harsh Vardhan Singh</span>
+                                <div>
+                                    <li><a href="https://github.com/rhvsingh" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://twitter.com/rhvsingh" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contri_box">
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://github.com/Rajkumar-justcoder.png" alt="Rajkumar Khistariya" />
+                            </div>
+                            <div class="contri-card-back">
+                                <span>Rajkumar Khistariya</span>
+                                <div>
+                                    <li><a href="https://github.com/Rajkumar-justcoder" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://twitter.com/Rajkumar_THM" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="blog-section p-tb" style="background: #f2f2f2" id="contributor">
             <div class="container">
                 <div class="sec-title text-center" style="color: #000000">
                     <h3>Contributors</h3>
                 </div>
             </div>
-            <style>
-                .contributors {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-                    justify-items: center;
-                    justify-content: center;
-                    gap: 2px;
-                    grid-row-gap: 10px;
-                }
-                
-                @media screen and (min-width: 1600px) {
-                    .contributors {
-                        max-width: 1200px;
-                        text-align: center;
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
-                }
-                
-                .contri_box {
-                    width: 100px;
-                    text-align: center;
-                }
-                
-                .contri_box img {
-                    width: 100%;
-                    border-radius: 4px;
-                }
-                
-                .news_email_submit {
-                    outline: none;
-                    border: 0;
-                    border-radius: 3px;
-                    overflow: hidden;
-                    top: 15px;
-                    font-weight: 600;
-                    cursor: pointer;
-                    transition: 0.3s ease-in-out;
-                }
-                
-                .news_email_submit:hover {
-                    background: #fbbd18;
-                    color: #444;
-                }
-            </style>
+
             <div class="contributors">
+
                 <div class="contri_box">
-                    <div>
-                        <a href="https://github.com/kevalvavaliya" target="_blank"><img src="https://avatars.githubusercontent.com/u/72963356?v=4" alt="Keval" /></a>
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://avatars.githubusercontent.com/u/72963356?v=4" alt="Keval" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/kevalvavaliya" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contri_box">
-                    <div>
-                        <a href="https://github.com/Nitesh-thapliyal" target="_blank"><img src="https://avatars.githubusercontent.com/u/53345517?v=4" alt="Nitesh" /></a>
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://avatars.githubusercontent.com/u/53345517?v=4" alt="Nitesh" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/Nitesh-thapliyal" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contri_box">
-                    <div>
-                        <a href="https://github.com/adityamangal1" target="_blank"><img src="https://github.com/adityamangal1.png?size=460" alt="Aditya" /></a>
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://github.com/adityamangal1.png?size=460" alt="Aditya" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/adityamangal1" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contri_box">
-                    <div>
-                        <a href="https://github.com/Piyush-Codes7" target="_blank"><img src="https://github.com/Piyush-Codes7.png?size=460" alt="Piyush" /></a>
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://github.com/Piyush-Codes7.png?size=460" alt="Piyush" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/Piyush-Codes7" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contri_box">
-                    <div>
-                        <a href="https://github.com/harikanani" target="_blank"><img src="https://github.com/harikanani.png?size=460" alt="Harikrushn" /></a>
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://github.com/harikanani.png?size=460" alt="Harikrushn" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/harikanani" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contri_box">
-                    <div>
-                        <a href="https://github.com/kamleshjoshi8102" target="_blank"><img src="https://github.com/kamleshjoshi8102.png" alt="Kamlesh" /></a>
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://github.com/kamleshjoshi8102.png" alt="Kamlesh" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/kamleshjoshi8102" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contri_box">
-                    <div>
-                        <a href="https://github.com/iatharva" target="_blank"><img src="https://github.com/iatharva.png" alt="Atharva I" /></a>
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://github.com/rushilmakvana.png" alt="Rushil Makvana" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/rushilmakvana" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contri_box">
-                    <div>
-                        <a href="https://github.com/aayush89890" target="_blank"><img src="https://github.com/aayush89890.png" alt="Aayush Jain" /></a>
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://github.com/iatharva.png" alt="Atharva I" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/iatharva" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contri_box">
-                    <div>
-                        <a href="https://github.com/arnav1776" target="_blank"><img src="https://github.com/arnav1776.png" alt="Arnav Sharma" /></a>
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <img src="https://github.com/aayush89890.png" alt="Aayush Jain" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/aayush89890" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contri_box">
-                    <div>
-                        <a href="https://github.com/EFFLUX110" target="_blank"><img src="https://github.com/EFFLUX110.png" alt="Mrinank" /></a>
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <!-- <img src='Images/shanghai-3459422_1280.webp'> -->
+                                <img src="https://github.com/arnav1776.png" alt="Arnav Sharma" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/arnav1776" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contri_box">
-                    <div>
-                        <a href="https://github.com/abhigoyani" target="_blank"><img src="https://github.com/abhigoyani.png" alt="Abhi Goyani" /></a>
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <!-- <img src='Images/shanghai-3459422_1280.webp'> -->
+                                <img src="https://github.com/EFFLUX110.png" alt="Mrinank" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/EFFLUX110" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contri_box">
-                    <div>
-                        <a href="https://github.com/dhruvaop" target="_blank"><img src="https://github.com/dhruvaop.png" alt="Dhruva Bhattacharya" /></a>
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <!-- <img src='Images/shanghai-3459422_1280.webp'> -->
+                                <img src="https://github.com/abhigoyani.png" alt="Abhi Goyani" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/abhigoyani" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contri_box">
-                    <div>
-                        <a href="https://github.com/Mayank17M" target="_blank"><img src="https://github.com/Mayank17M.png" alt="Mayank" /></a>
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <!-- <img src='Images/shanghai-3459422_1280.webp'> -->
+                                <img src="https://github.com/dhruvaop.png" alt="Dhruva Bhattacharya" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/dhruvaop" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contri_box">
-                    <div>
-                        <a href="https://github.com/rhvsingh" target="_blank"><img src="https://github.com/rhvsingh.png" alt="Raja Harsh Vardhan Singh" /></a>
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <!-- <img src='Images/shanghai-3459422_1280.webp'> -->
+                                <img src="https://github.com/Mayank17M.png" alt="Mayank" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/Mayank17M" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contri_box">
-                    <div>
-                        <a href="https://github.com/stutimongia2024" target="_blank"><img src="https://github.com/stutimongia2024.png" alt="Stuti" /></a>
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <!-- <img src='Images/shanghai-3459422_1280.webp'> -->
+                                <img src="https://github.com/rhvsingh.png" alt="Raja Harsh Vardhan Singh" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/rhvsingh" target="_blank">Hero</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contri_box">
-                    <div>
-                        <a href="https://github.com/Rajkumar-justcoder" target="_blank"><img src="https://github.com/Rajkumar-justcoder.png" alt="Rajkumar Khistariya" /></a>
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <!-- <img src='Images/shanghai-3459422_1280.webp'> -->
+                                <img src="https://github.com/stutimongia2024.png" alt="Stuti" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/stutimongia2024" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contri_box">
-                    <div>
-                        <a href="https://github.com/rajmahadev8" target="_blank"><img src="https://github.com/rajmahadev8.png" alt="Raj Mahadevwala" /></a>
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <!-- <img src='Images/shanghai-3459422_1280.webp'> -->
+                                <img src="https://github.com/Rajkumar-justcoder.png" alt="Rajkumar Khistariya" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/Rajkumar-justcoder" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contri_box">
+                    <div class="contri-card">
+                        <div class="contri-card-inner">
+                            <div class="contri-card-front">
+                                <!-- <img src='Images/shanghai-3459422_1280.webp'> -->
+                                <img src="https://github.com/rajmahadev8.png" alt="Raj Mahadevwala" />
+                            </div>
+                            <div class="contri-card-back">
+                                <a href="https://github.com/rajmahadev8" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="contibutors-container" id="contributor" style="display: none">
+            <div class="contibutors-container" id="contributor" style="display: none;">
                 <div class="contributors-inner">
                     <div class="contrib-row-outer">
                         <div class="contrib-block-row">
