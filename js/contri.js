@@ -49,7 +49,6 @@ var teamMember = [{
     }
 ];
 
-
 var contriMember = [{
         name: 'Keval Vavaliya',
         image: 'https://avatars.githubusercontent.com/u/72963356?v=4',
