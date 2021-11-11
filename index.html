@@ -6227,123 +6227,6 @@
         </div>
         <!-- The Partner end -->
         <!-- The Media start -->
-        <style>
-            .contributors {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-                justify-items: center;
-                justify-content: center;
-                gap: 10px;
-                grid-row-gap: 2em;
-            }
-            
-            @media screen and (min-width: 1600px) {
-                .contributors {
-                    max-width: 1200px;
-                    text-align: center;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-            }
-            
-            .contri_box {
-                width: auto;
-                text-align: center;
-            }
-            
-            .contri-card {
-                perspective: 800px;
-            }
-            
-            .contri-card-inner {
-                width: 200px;
-                height: 250px;
-                position: relative;
-                transition: transform 0.6s;
-                transform-style: preserve-3d;
-            }
-            
-            .contri-card-inner img {
-                width: 100%;
-            }
-            
-            .contri-card-front,
-            .contri-card-back {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                transition: transform 0.3s ease-in-out;
-                -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-                box-shadow: 0px 0px 20px -10px #333;
-                border-radius: 10px;
-                overflow: hidden;
-            }
-            
-            .contri-card-front img {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                max-width: none;
-                left: 0;
-                top: 0;
-                bottom: 0;
-                right: 0;
-                margin: auto;
-                padding: 0;
-            }
-            
-            .contri-card-back {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background: linear-gradient(#151515, #333);
-                color: #fff;
-                transform: rotateY(180deg);
-            }
-            
-            .contri-card-back span {
-                font-size: 24px;
-                font-weight: bold;
-            }
-            
-            .contri-card-back li {
-                list-style: none;
-                display: inline-block;
-                margin: 0 5px;
-                font-size: 18px;
-            }
-            
-            .contri-card:hover .contri-card-inner {
-                transform: rotateY(180deg);
-            }
-            
-            .contri-card:hover .contri-card-back {
-                z-index: 1;
-            }
-            
-            .contri-card:hover .contri-card-front {
-                z-index: -1;
-            }
-            
-            .news_email_submit {
-                outline: none;
-                border: 0;
-                border-radius: 3px;
-                overflow: hidden;
-                top: 15px;
-                font-weight: 600;
-                cursor: pointer;
-                transition: 0.3s ease-in-out;
-            }
-            
-            .news_email_submit:hover {
-                background: #fbbd18;
-                color: #444;
-            }
-        </style>
         <div class="blog-section p-tb" style="background: #f2f2f2" id="our-team">
             <div class="container">
                 <div class="sec-title text-center" style="color: #000000">
@@ -6352,7 +6235,6 @@
             </div>
             <div class="contributors"></div>
         </div>
-
         <div class="blog-section p-tb" style="background: #f2f2f2" id="contributor">
             <div class="container">
                 <div class="sec-title text-center" style="color: #000000">
