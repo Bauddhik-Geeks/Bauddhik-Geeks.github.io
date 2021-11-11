@@ -1,5 +1,5 @@
 var teamMember = [{
-    name: 'Raja',
+    name: 'Raja Harsh Vardhan Singh',
     image: 'https://github.com/rhvsingh.png',
     github: 'https://github.com/rhvsingh',
     twitter: 'rhvsingh'
@@ -8,6 +8,31 @@ var teamMember = [{
     image: 'https://github.com/rhvsingh.png',
     github: 'rajkumar',
     twitter: 'rajkumar'
+}, {
+    name: 'Aditya',
+    image: 'https://github.com/rhvsingh.png',
+    github: 'aditya',
+    twitter: 'aditya'
+}, {
+    name: 'Aditya',
+    image: 'https://github.com/rhvsingh.png',
+    github: 'aditya',
+    twitter: 'aditya'
+}, {
+    name: 'Aditya',
+    image: 'https://github.com/rhvsingh.png',
+    github: 'aditya',
+    twitter: 'aditya'
+}, {
+    name: 'Aditya',
+    image: 'https://github.com/rhvsingh.png',
+    github: 'aditya',
+    twitter: 'aditya'
+}, {
+    name: 'Aditya',
+    image: 'https://github.com/rhvsingh.png',
+    github: 'aditya',
+    twitter: 'aditya'
 }];
 
 
