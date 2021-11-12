@@ -1,6 +1,5 @@
 function isUrl(s) {
-    var regexp = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
-    console.log(regexp.test(s));
+    var regexp = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;   
     return regexp.test(s);
 }
 var lastId,
@@ -9,7 +8,6 @@ var lastId,
 menuItems = topMenu.find("a"),
     scrollItems = menuItems.map(function() {
         var href = $(this).attr("href");
-        console.log(href);
         if (!isUrl(href)) {
             var item = $(href);
             if (item.length) { return item; } else { return; }
@@ -18,9 +16,6 @@ menuItems = topMenu.find("a"),
         }
 
     });
-
-console.log(scrollItems);
-
 menuItems.click(function(e) {
     var href = $(this).attr("href");
     if (!isUrl(href)) {
