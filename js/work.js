@@ -1,4 +1,4 @@
-const mworkshopcard = [
+const workshopcard = [
     {
          workshopname:'Git & Github',
         workshopimg:'github_session.png',
@@ -18,14 +18,14 @@ const mworkshopcard = [
     },
 ];
 
-var mworkRow = document.querySelectorAll('.mainworkrow')[0];
-for(let i=0;i<mworkshopcard.length;i++){
+var workRow = document.querySelectorAll('.workrow')[0];
+for(let i=0;i<workshopcard.length;i++){
     let work=document.createElement('div');
     work.className='workcolums';
     let imgurl;
    
-        imgurl= 'workshop/images/' + mworkshopcard[i].workshopimg;
-        work.innerHTML='<a class="sess_card"><div class="sesscardstext">'+mworkshopcard[i].workshopname+'</div><div class="sesscardsimg"><img class="sess_img" src="'+imgurl+'" alt="'+mworkshopcard[i].workshopname+'"></div></a>';
+        imgurl= 'images/' + workshopcard[i].workshopimg;
+        work.innerHTML='<a class="sess_card"><div class="sesscardstext">'+workshopcard[i].workshopname+'</div><div class="sesscardsimg"><img class="sess_img" src="'+imgurl+'" alt="'+workshopcard[i].workshopname+'"></div></a>';
     
-mworkRow.append(work);    
+workRow.append(work);    
 }
