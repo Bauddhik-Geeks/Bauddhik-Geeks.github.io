@@ -2,7 +2,7 @@ const mworkshopcard = [
     {
          workshopname:'Git & Github',
         workshopimg:'github_session.png',
-        workshoplink:'workshop/git and github/git-and-github.html'
+        workshoplink:'#' //workshop/git and github/git-and-github.html
     },{
         workshopname:'Hacktoberfest',
         workshopimg:'hacktoberfest.png',
