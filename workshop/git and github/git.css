@@ -17,25 +17,28 @@
     
 
 }
+.work-list:hover .arrow_hover,
 .arrow_hover:hover{
     fill: #fbbd18;
 }
-
+.back_arrow:hover{
+cursor: pointer;   
+}
 .workbar{
     
     display: flex;
     justify-content: center;
     align-items: center;
    position: sticky;
-    top: 0;
-    cursor: pointer;   
-}
+   margin-top: 20px;
+}   
 .work-list{
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
+
 .work-list li{
     list-style: none;
     padding: 19px 25px;
@@ -51,10 +54,12 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 }
   
-.work-list li a:hover {
+/* .work-list li a:hover {
     background-color: transparent;
     color: #fbbd18;
-}
+} */
+
+
 
 
 @media only screen and (max-width: 1140px)
