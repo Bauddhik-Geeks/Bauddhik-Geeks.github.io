@@ -124,6 +124,10 @@ var contriMember = [
         image: 'https://github.com/Mayank17M.png',
         github: 'https://github.com/Mayank17M'
     }, {
+        name: 'Mohd Kaleem Saqlaini',
+        image: 'https://github.com/saqlainkaleem.png',
+        github: 'https://github.com/saqlainkaleem'
+    }, {
         name: 'Raj Mahadevwala',
         image: 'https://github.com/rajmahadev8.png',
         github: 'https://github.com/rajmahadev8'
