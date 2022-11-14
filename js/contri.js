@@ -16,8 +16,8 @@ var teamMember = [{
         twitter: 'https://twitter.com/AdityaM44382015'
     }, {
         name: 'Piyush Chandel',
-        image: 'https://github.com/Piyush-Codes7.png?size=460',
-        github: 'https://github.com/Piyush-Codes7',
+        image: 'https://github.com/Piyush-Chandel7.png?size=460',
+        github: 'https://github.com/Piyush-Chandel7',
         twitter: 'https://twitter.com/Piyush_Chandel7'
     },
     {
